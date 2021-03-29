@@ -1,0 +1,22 @@
+<div class="adv col-4 offset-8 col-lg-4 offset-lg-8 col-md-4 offset-md-8 col-sm-4 offset-sm-8">
+  <div class="title pt-3 pl-3">
+    <h2>ADVANCE FILTER
+      <span class="material-icons mt-1">clear</span>
+    </h2>
+  </div>
+  <hr>
+  <mat-accordion *ngFor="let adv of advancedFilter">
+    <mat-expansion-panel (opened)="adv.panelOpenState = true" (closed)="adv.panelOpenState = false"hideToggle="true">
+      <mat-expansion-panel-header>
+        <mat-panel-title class="pl-2">
+          {{adv.areaTitle}}
+        </mat-panel-title>
+        <mat-panel-description>
+          <span *ngIf="!adv.panelOpenState" class="material-icons plus">add</span>
+          <span *ngIf="adv.panelOpenState" class="material-icons minus">minimize</span>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p *ngFor="let a of adv.inquiries">{{a}}</p>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

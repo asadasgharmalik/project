@@ -1,0 +1,39 @@
+#bg{
+    background-color: #f5f3f3;
+}
+.row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.dash{
+    padding-right: 0px;
+    padding-left: 0px;
+    background-color: white;
+    border: 1px solid  #e2e1e1;
+    border-radius: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    /* margin: 1px; */
+    height: 64px;
+    padding-top: 21px;
+}
+.value{
+    font-size: 22px;
+    font-weight: 400;
+} 
+.dash:first-child>.value{
+color: blue;
+}
+.card-deck .card {
+    margin-right: 1px;
+    margin-bottom: 0;
+    margin-left: 1px;
+    border-radius: 0px;
+}
+h4{
+    margin: 0px 0px 8px;
+}
+
+
+

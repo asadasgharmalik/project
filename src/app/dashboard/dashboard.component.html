@@ -1,0 +1,21 @@
+<div class="row pt-3 pl-3" id="bg">
+  <h1>Dashboard</h1>
+</div>
+<div class="container-fluid" id="bg" *ngFor="let dsh of dashboard;let i=index">
+  <div class="title">
+    <h4>{{dsh.title}}</h4>
+  </div>
+  <div class="row pb-3 ">
+    <div class="dash col-lg col-md-3 mb-md-1 col-sm-4 mb-sm-1 col-xs-6 mb-xs-1 pl-2" *ngFor="let opt of dsh.option">
+      {{opt.name}}
+      <div class="value float-right pr-2">
+       {{opt.value}}</div>
+    </div>
+  </div>
+</div>
+<!-- [style.color]="i==0 ? 'blue' : 'null'" -->
+<!-- <mat-card class="dash col-lg col-md-3   mb-md-1 col-sm-4 mb-sm-1 col-xs-6 mb-xs-1 pl-2" *ngFor="let opt of dsh.option">
+   {{opt.name}}
+      <div class="value float-right pr-2">
+        {{opt.value}}</div>
+      </mat-card> -->
